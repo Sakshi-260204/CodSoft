@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #7ea1e7;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    padding: 10px; /* Added padding to avoid issues on small screens */
+    box-sizing: border-box;
+}
+
+.calculator {
+    background-color: #c4c6d6;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(192, 185, 185, 0.2);
+    padding: 20px;
+    width: 320px;
+    max-width: 400px;
+}
+
+.display {
+    background-color: #4e4747;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    overflow: hidden;
+    word-wrap: break-word; /* Allows breaking long numbers */
+    min-height: 3rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.btn {
+    background-color: #94a8e4;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5665c4;
+}
+
+.operator {
+    background-color: #ff79c6;
+}
+
+.operator:hover {
+    background-color: #ff92d0;
+}
+
+.clear {
+    background-color: #ff5555;
+}
+
+.clear:hover {
+    background-color: #ff7979;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .display {
+        padding: 10px;
+        font-size: 1.5rem;
+        min-height: 2.5rem;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 10px;
+    }
+
+    .display {
+        padding: 8px;
+        font-size: 1.2rem;
+        min-height: 2rem;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .buttons {
+        gap: 6px;
+    }
+}

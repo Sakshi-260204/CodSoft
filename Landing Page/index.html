@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bansal's</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>10X your business with Bansal's</h1>
+            <h1>We Research, We Strategize, We Drive Results</h1>
+            <h3>We are Innovators, Ideators, Creators, Designers, Marketers and Managers</h3>
+            <p>Your success starts here. Discover our innovative solutions that will boost your business.</p>
+            <a href="#features" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-container">
+        <div class="feature-item">
+            <h3>Researching & Ideation</h3>
+            <p>Our first thing is to research more about the company and competitors, what’s done and what’s not. Ideate
+                the strategy, process, brand launch.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Strategy & Execution</h3>
+            <p>Strategize the brand’s and company’s marketing according to the target audience, brand proposition, brand
+                message & execute the strategy flawlessly to drive results.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Result & Repeat</h3>
+            <p>This is where the magic happens when our strategy starts to pay off. Our curious minds don’t satisfy the
+                expected result. We always need more and better results!</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a team of multi-skilled and curious digital marketing specialists who are always up for new challenges
+            and learning as fast as digital is changing.
+
+
+            We deliver incredible creativity that captures the attention and heart of the customers. With the expertise
+            of the team, we deliver marketing solutions that have meaning, purpose and result.
+
+            We believe in honest communication and complete transparency with our clients.
+
+            Producing remarkable work requires more than a strategy, beautiful design, well-structured development or a
+            responsive layout.
+
+            Remarkable work is created only when we focus on each and every small detail from pixel data to commenting
+            on social media posts.
+
+            And proudly we do and create remarkable results!.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us, and we’ll be happy to assist you.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MyBrand. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
